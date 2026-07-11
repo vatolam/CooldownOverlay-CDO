@@ -1,33 +1,128 @@
 {
-  "catalog_version": 2,
+  "catalog_version": 3,
   "skills": {
-    "Action Surge": {
-      "duration_ms": 2300,
-      "cooldown_ms": 20000,
+    "1": {
+      "name": "Demon Step",
+      "duration_ms": 0,
+      "cooldown_ms": 0,
       "snap_skill": false,
       "is_weapon": false,
-      "weapon_switch_bypass": true,
+      "weapon_switch_bypass": false,
       "unequips_itself": false,
       "switches_to": ""
     },
-    "Agility": {
-      "duration_ms": 10000,
-      "cooldown_ms": 29500,
+    "2": {
+      "name": "Demon Flip",
+      "duration_ms": 0,
+      "cooldown_ms": 0,
       "snap_skill": false,
       "is_weapon": false,
-      "weapon_switch_bypass": true,
-      "unequips_itself": false,
-      "switches_to": ""
-    },
-    "Bane": {
-      "duration_ms": 20000,
-      "cooldown_ms": 25000,
-      "snap_skill": false,
-      "is_weapon": false,
-      "weapon_switch_bypass": true,
+      "weapon_switch_bypass": false,
       "unequips_itself": true,
-      "switches_to": "1"
+      "switches_to": ""
     },
+    "3": {
+      "name": "Rising Dragon",
+      "duration_ms": 0,
+      "cooldown_ms": 11600,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": true,
+      "switches_to": ""
+    },
+    "4": {
+      "name": "Spin Kick",
+      "duration_ms": 0,
+      "cooldown_ms": 10500,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": true,
+      "switches_to": ""
+    },
+    "5": {
+      "name": "Leg Breaker",
+      "duration_ms": 0,
+      "cooldown_ms": 10650,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": true,
+      "switches_to": ""
+    },
+    "6": {
+      "name": "Axe Kick",
+      "duration_ms": 0,
+      "cooldown_ms": 8800,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "7": {
+      "name": "Ignis",
+      "duration_ms": 0,
+      "cooldown_ms": 10800,
+      "snap_skill": true,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "8": {
+      "name": "Vulnere",
+      "duration_ms": 0,
+      "cooldown_ms": 0,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "9": {
+      "name": "Gelidus",
+      "duration_ms": 0,
+      "cooldown_ms": 0,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "0": {
+      "name": "Viribus",
+      "duration_ms": 0,
+      "cooldown_ms": 0,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "-": {
+      "name": "Shoulder Throw",
+      "duration_ms": 0,
+      "cooldown_ms": 4700,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "=": {
+      "name": "Snarvindur",
+      "duration_ms": 0,
+      "cooldown_ms": 8500,
+      "snap_skill": true,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    }
+  },
+  "saved_skills": {
     "Dagger": {
       "duration_ms": 0,
       "cooldown_ms": 0,
@@ -36,19 +131,19 @@
       "weapon_switch_bypass": false,
       "unequips_itself": false,
       "switches_to": ""
-        },
-    "Spear": {
+    },
+    "Shadow Fan": {
       "duration_ms": 0,
-      "cooldown_ms": 0,
+      "cooldown_ms": 10650,
       "snap_skill": false,
-      "is_weapon": true,
+      "is_weapon": false,
       "weapon_switch_bypass": false,
       "unequips_itself": false,
       "switches_to": ""
     },
-    "Dagger Throw": {
+    "Triple Dagger Throw": {
       "duration_ms": 0,
-      "cooldown_ms": 10300,
+      "cooldown_ms": 10500,
       "snap_skill": false,
       "is_weapon": false,
       "weapon_switch_bypass": false,
@@ -64,15 +159,6 @@
       "unequips_itself": false,
       "switches_to": ""
     },
-    "Floresco": {
-      "duration_ms": 0,
-      "cooldown_ms": 5500,
-      "snap_skill": true,
-      "is_weapon": false,
-      "weapon_switch_bypass": false,
-      "unequips_itself": false,
-      "switches_to": ""
-    },
     "Lethality": {
       "duration_ms": 0,
       "cooldown_ms": 30000,
@@ -82,12 +168,39 @@
       "unequips_itself": false,
       "switches_to": ""
     },
-    "Shadow Fan": {
+    "Vulnere": {
       "duration_ms": 0,
-      "cooldown_ms": 10650,
+      "cooldown_ms": 0,
       "snap_skill": false,
       "is_weapon": false,
       "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "Dagger Throw": {
+      "duration_ms": 0,
+      "cooldown_ms": 10300,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "Bane": {
+      "duration_ms": 20000,
+      "cooldown_ms": 25000,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": true,
+      "unequips_itself": true,
+      "switches_to": "1"
+    },
+    "Agility": {
+      "duration_ms": 10000,
+      "cooldown_ms": 29500,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": true,
       "unequips_itself": false,
       "switches_to": ""
     },
@@ -106,17 +219,26 @@
       "snap_skill": false,
       "is_weapon": true,
       "weapon_switch_bypass": false,
-      "unequips_itself": false,
-      "switches_to": ""
+      "switches_to": "",
+      "unequips_itself": false
     },
-    "Triple Dagger Throw": {
-      "duration_ms": 0,
-      "cooldown_ms": 10500,
+    "Action Surge": {
+      "duration_ms": 2300,
+      "cooldown_ms": 20000,
       "snap_skill": false,
       "is_weapon": false,
+      "weapon_switch_bypass": true,
+      "switches_to": "",
+      "unequips_itself": false
+    },
+    "Floresco": {
+      "duration_ms": 0,
+      "cooldown_ms": 5500,
+      "snap_skill": true,
+      "is_weapon": false,
       "weapon_switch_bypass": false,
-      "unequips_itself": false,
-      "switches_to": ""
+      "switches_to": "",
+      "unequips_itself": false
     },
     "Verdien": {
       "duration_ms": 0,
@@ -124,19 +246,28 @@
       "snap_skill": true,
       "is_weapon": false,
       "weapon_switch_bypass": false,
-      "unequips_itself": false,
-      "switches_to": ""
+      "switches_to": "",
+      "unequips_itself": false
     },
     "Verto": {
       "duration_ms": 0,
       "cooldown_ms": 20250,
-      "snap_skill": false,
+      "snap_skill": true,
       "is_weapon": false,
-      "weapon_switch_bypass": true,
-      "unequips_itself": true,
+      "weapon_switch_bypass": false,
+      "switches_to": "",
+      "unequips_itself": false
+    },
+    "Spear": {
+      "duration_ms": 0,
+      "cooldown_ms": 0,
+      "snap_skill": false,
+      "is_weapon": true,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
       "switches_to": ""
     },
-    "Vulnere": {
+    "Viribus": {
       "duration_ms": 0,
       "cooldown_ms": 0,
       "snap_skill": false,
@@ -144,6 +275,332 @@
       "weapon_switch_bypass": false,
       "unequips_itself": false,
       "switches_to": ""
+    },
+    "Gelidus": {
+      "duration_ms": 0,
+      "cooldown_ms": 0,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "Demon Step": {
+      "duration_ms": 0,
+      "cooldown_ms": 0,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "Demon Flip": {
+      "duration_ms": 0,
+      "cooldown_ms": 0,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": true,
+      "switches_to": ""
+    },
+    "Rising Dragon": {
+      "duration_ms": 0,
+      "cooldown_ms": 11600,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": true,
+      "switches_to": ""
+    },
+    "Spin Kick": {
+      "duration_ms": 0,
+      "cooldown_ms": 10500,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": true,
+      "switches_to": ""
+    },
+    "Leg Breaker": {
+      "duration_ms": 0,
+      "cooldown_ms": 10650,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": true,
+      "switches_to": ""
+    },
+    "Axe Kick": {
+      "duration_ms": 0,
+      "cooldown_ms": 8800,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "Ignis": {
+      "duration_ms": 0,
+      "cooldown_ms": 10800,
+      "snap_skill": true,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
+    },
+    "Shoulder Throw": {
+      "duration_ms": 0,
+      "cooldown_ms": 4700,
+      "snap_skill": false,
+      "is_weapon": false,
+      "weapon_switch_bypass": false,
+      "unequips_itself": false,
+      "switches_to": ""
     }
-  }
+  },
+  "profiles": {
+    "Faceless": {
+      "1": {
+        "name": "Dagger",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": true,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "2": {
+        "name": "Shadow Fan",
+        "duration_ms": 0,
+        "cooldown_ms": 10650,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "3": {
+        "name": "Triple Dagger Throw",
+        "duration_ms": 0,
+        "cooldown_ms": 10500,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "4": {
+        "name": "Ethereal Strike",
+        "duration_ms": 0,
+        "cooldown_ms": 15500,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": true,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "5": {
+        "name": "Lethality",
+        "duration_ms": 0,
+        "cooldown_ms": 30000,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "6": {
+        "name": "Vulnere",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "7": {
+        "name": "Dagger Throw",
+        "duration_ms": 0,
+        "cooldown_ms": 10300,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "8": {
+        "name": "Viribus",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "9": {
+        "name": "Bane",
+        "duration_ms": 20000,
+        "cooldown_ms": 25000,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": true,
+        "unequips_itself": true,
+        "switches_to": "1"
+      },
+      "0": {
+        "name": "Agility",
+        "duration_ms": 10000,
+        "cooldown_ms": 29500,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": true,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "-": {
+        "name": "Gelidus",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      },
+      "=": {
+        "name": "Snarvindur",
+        "duration_ms": 0,
+        "cooldown_ms": 8500,
+        "snap_skill": true,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "unequips_itself": false,
+        "switches_to": ""
+      }
+    },
+    "Test": {
+      "1": {
+        "name": "Dagger",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": true,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "2": {
+        "name": "Ethereal Strike",
+        "duration_ms": 0,
+        "cooldown_ms": 15500,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": true,
+        "switches_to": ""
+      },
+      "3": {
+        "name": "Lethality",
+        "duration_ms": 0,
+        "cooldown_ms": 30000,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "4": {
+        "name": "Shadow Fan",
+        "duration_ms": 0,
+        "cooldown_ms": 10650,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "5": {
+        "name": "Triple Dagger Throw",
+        "duration_ms": 0,
+        "cooldown_ms": 10500,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "6": {
+        "name": "Vulnere",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "7": {
+        "name": "Dagger Throw",
+        "duration_ms": 0,
+        "cooldown_ms": 10300,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "8": {
+        "name": "",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "9": {
+        "name": "Bane",
+        "duration_ms": 20000,
+        "cooldown_ms": 25000,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": true,
+        "switches_to": "1"
+      },
+      "0": {
+        "name": "Agility",
+        "duration_ms": 10000,
+        "cooldown_ms": 29500,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": true,
+        "switches_to": ""
+      },
+      "-": {
+        "name": "",
+        "duration_ms": 0,
+        "cooldown_ms": 0,
+        "snap_skill": false,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      },
+      "=": {
+        "name": "Snarvindur",
+        "duration_ms": 0,
+        "cooldown_ms": 8500,
+        "snap_skill": true,
+        "is_weapon": false,
+        "weapon_switch_bypass": false,
+        "switches_to": ""
+      }
+    }
+  },
+  "active_profile": "Faceless",
+  "pre_saved_catalog_version": 2,
+  "pre_saved_skills_imported": true,
+  "overlay_x": 30,
+  "overlay_y": 160,
+  "hotbar_center_x": 0,
+  "hotbar_bottom_offset": 49,
+  "hotbar_slot_width": 64,
+  "hotbar_slot_height": 64,
+  "hotbar_slot_gap": 8,
+  "hotbar_opacity": 50
 }
