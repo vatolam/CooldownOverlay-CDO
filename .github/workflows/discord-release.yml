@@ -1,0 +1,70 @@
+name: Announce release in Discord
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Discord announcement
+        env:
+          RELEASE_NAME: ${{ github.event.release.name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          RELEASE_BODY: ${{ github.event.release.body }}
+          RELEASE_URL: ${{ github.event.release.html_url }}
+          RELEASE_AUTHOR: ${{ github.event.release.author.login }}
+          RELEASE_ASSETS: ${{ toJson(github.event.release.assets) }}
+        run: |
+          exe_url=$(printf '%s' "$RELEASE_ASSETS" | jq -r '.[] | select(.name == "SkillCooldownOverlay.exe") | .browser_download_url' | head -n 1)
+          if [ -z "$exe_url" ]; then
+            exe_url="$RELEASE_URL"
+          fi
+
+          description=$(printf '%s' "$RELEASE_BODY" | head -c 3800)
+          if [ -z "$description" ]; then
+            description="A new version of Skill Cooldown Overlay is available."
+          fi
+
+          jq -n \
+            --arg username "Cooldown Overlay Updates" \
+            --arg title "${RELEASE_NAME:-Cooldown Overlay $RELEASE_TAG}" \
+            --arg description "$description" \
+            --arg release_url "$RELEASE_URL" \
+            --arg exe_url "$exe_url" \
+            --arg author "$RELEASE_AUTHOR" \
+            --arg tag "$RELEASE_TAG" \
+            '{
+              username: $username,
+              embeds: [{
+                title: $title,
+                url: $release_url,
+                description: $description,
+                color: 14753839,
+                fields: [
+                  {name: "Version", value: $tag, inline: true},
+                  {name: "Published by", value: $author, inline: true},
+                  {name: "Download", value: ("[SkillCooldownOverlay.exe](" + $exe_url + ")"), inline: false}
+                ],
+                footer: {text: "Cooldown Overlay release notifications"}
+              }]
+            }' > discord-payload.json
+
+      - name: Send announcement
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+            echo "DISCORD_WEBHOOK_URL is not configured."
+            exit 1
+          fi
+          curl --fail-with-body \
+            --retry 3 \
+            -H "Content-Type: application/json" \
+            -X POST \
+            --data @discord-payload.json \
+            "$DISCORD_WEBHOOK_URL"
